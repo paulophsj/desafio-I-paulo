@@ -1,0 +1,39 @@
+*,*::before,*::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+:root{
+    --blue-color-1: #005cff;
+    --purple-color-1: #6220c1
+}
+header{
+    .header-message{
+        background-color: var(--blue-color-1);
+        color: white;
+        > small {
+            > span {
+                background-color: var(--purple-color-1);
+                padding: 1px 5px 1px 5px;
+            }
+        }
+    }
+    .header-navigation{
+        .input-box{
+            input{
+                text-indent: 1rem;
+                border-radius: 1rem 0rem 0rem 1rem;
+            }
+            input:focus{
+                outline-color: black;
+            }
+            input::placeholder{
+                color: black;
+                text-indent: 1rem;
+            }
+        }
+    }
+}
