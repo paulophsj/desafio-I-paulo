@@ -37,3 +37,16 @@ header{
         }
     }
 }
+#toast-button,
+#toast-categories{
+    width: 85%;
+}
+#toast-categories{
+    text-overflow: clip;
+    height: fit-content;
+    aside{
+        overflow-y:scroll;
+        scrollbar-width:thin;
+        height: 205px;
+    }
+}
