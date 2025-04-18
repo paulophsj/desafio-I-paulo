@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="d-flex flex-column align-items-center border-bottom">
+  <header class="d-flex flex-column align-items-center border-bottom bg-white" style="position: sticky; top: 0;">
     <div class="header-message w-100 d-flex align-items-center justify-content-center p-1">
       <small class="h6 m-0">
         Ganhe <span class="rounded-1">R$ 10,00</span> de desconto no seu
@@ -70,7 +70,7 @@
               <p class="m-0 text-nowrap">Todas as Categorias</p>
             </div>
             <!-- Toast all categories-->
-            <div class="position-absolute fade toast hide p-4 d-flex justify-content-between gap-5"
+            <div class="position-absolute fade bg-white rounded hide p-4 d-flex justify-content-between gap-5"
               id="toast-categories" style="left: 0;">
               <aside class="d-flex flex-column gap-2">
                 <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
@@ -270,7 +270,7 @@
                   </strong>
                 </p>
                 <button class="p-2 border rounded border-white bg-transparent">
-                  <p class="m-0 text-white">
+                  <p class="m-0 text-white" style="font-size: 10px;">
                     VER TODOS
                   </p>
                 </button>
@@ -280,7 +280,7 @@
           <li>
             <p class="text-secondary m-0" id="button-departaments">Departamento</p>
             <!-- Toast departamentos-->
-            <div class="position-absolute fade toast hide p-4 d-flex justify-content-between align-items-center"
+            <div class="position-absolute rounded fade bg-white hide p-4 d-flex justify-content-between align-items-center"
               id="toast-departaments" style="left: 0;">
               <span class="flex-grow-1 d-flex flex-column gap-3">
                 <h5>
@@ -331,7 +331,7 @@
                   </strong>
                 </p>
                 <button class="p-2 border rounded border-white bg-transparent">
-                  <p class="m-0 text-white">
+                  <p class="m-0 text-white" style="font-size: 10px;">
                     VER TODOS
                   </p>
                 </button>
@@ -363,6 +363,25 @@
       </nav>
     </div>
   </header>
+  <main>
+    <div class="banner d-flex justify-content-center gap-5" style="background-color: lightgray; height: 530px;">
+        <img src="https://www.pngarts.com/files/3/Chair-PNG-Pic.png" width="400" alt="Imagem de cadeira do banner" style="object-fit: cover;">
+        <div class="text-center align-self-center d-flex flex-column gap-3">
+          <p class="m-0" style="font-size: 4.5rem; color: black;">
+            <strong>SUPER</strong>
+            SALE
+          </p>
+          <p style="letter-spacing: 5px; font-weight: bold;" class="text-primary m-0 h5">
+            ITENS SELECIONADOS COM ATÉ
+          </p>
+          <P class="text-primary m-0" style="font-size: 2.5rem;">
+            <strong>
+              50%OFF
+            </strong>
+          </P>
+        </div>
+    </div>
+  </main>
 </body>
 <!--Script for departaments button-->
 <script>
