@@ -37,16 +37,27 @@ header{
         }
     }
 }
-#toast-button,
+#toast-departaments,
 #toast-categories{
-    width: 85%;
+    width: 100%;
 }
 #toast-categories{
     text-overflow: clip;
     height: fit-content;
-    aside{
+    pointer-events: none;
+    aside ul{
         overflow-y:scroll;
         scrollbar-width:thin;
-        height: 205px;
+        height: 350px
+        ;
     }
+}
+.image-coffee-toast{
+    background-image: url(https://img.freepik.com/fotos-gratis/arranjo-de-mesa-com-angulo-alto-de-cafe_23-2149073075.jpg?semt=ais_hybrid&w=740);
+    background-position: center;
+    background-size:cover ;
+    padding: 0px 80px 0px 20px;
+    width: 200px;
+    height: 350px;
+    text-wrap: wrap;
 }
