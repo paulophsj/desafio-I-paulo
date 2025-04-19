@@ -1,4 +1,6 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -6,78 +8,92 @@
     list-style: none;
 }
 
-:root{
+:root {
     --blue-color-1: #005cff;
     --purple-color-1: #6220c1
 }
-header{
+
+header {
     z-index: 999;
-    .header-message{
+
+    .header-message {
         background-color: var(--blue-color-1);
         color: white;
-        > small {
-            > span {
+
+        >small {
+            >span {
                 background-color: var(--purple-color-1);
                 padding: 1px 5px 1px 5px;
             }
         }
     }
-    .header-navigation{
-        .input-box{
-            input{
+
+    .header-navigation {
+        .input-box {
+            input {
                 text-indent: 1rem;
                 border-radius: 1rem 0rem 0rem 1rem;
             }
-            input:focus{
+
+            input:focus {
                 outline-color: black;
             }
-            input::placeholder{
+
+            input::placeholder {
                 color: black;
                 text-indent: 1rem;
             }
         }
     }
 }
+
 #toast-departaments,
-#toast-categories{
+#toast-categories {
     width: 100%;
 }
-#toast-categories{
+
+#toast-categories {
     text-overflow: clip;
     height: fit-content;
     pointer-events: none;
-    aside ul{
-        overflow-y:scroll;
-        scrollbar-width:thin;
-        height: 350px
-        ;
+
+    aside ul {
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        height: 350px;
     }
 }
-.image-coffee-toast{
+
+.image-coffee-toast {
     background-image: url(https://img.freepik.com/fotos-gratis/arranjo-de-mesa-com-angulo-alto-de-cafe_23-2149073075.jpg?semt=ais_hybrid&w=740);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
     padding: 0px 80px 0px 20px;
     width: 200px;
     height: 350px;
     text-wrap: wrap;
 }
-#carouselExample, #carouselExample2{
+
+#carouselExample,
+#carouselExample2 {
     .carousel-inner {
-        .carousel-item{
-            div{
+        .carousel-item {
+            div {
                 div {
                     border: 1px solid lightgray;
                     width: min-content;
                     display: flex;
                     flex-direction: column;
+
                     /* Div dos valores */
-                    div{
+                    div {
                         border: none;
+
                         u {
                             background-color: rgb(39, 164, 168);
                         }
                     }
+
                     span {
                         background-image: url(https://png.pngtree.com/png-clipart/20240225/original/pngtree-a-young-man-standing-and-smiling-wearing-white-polo-shirt-shorts-png-image_14409151.png);
                         width: 225px;
@@ -85,39 +101,45 @@ header{
                         background-size: cover;
                         background-position: center;
                     }
+
                     button {
                         background-color: var(--blue-color-1);
                         color: white;
                         border: none;
                     }
-                    small:last-child{
+
+                    small:last-child {
                         background-color: darkblue;
                         width: fit-content;
                     }
-        
+
                 }
 
             }
         }
     }
-    button{
+
+    button {
         opacity: 1;
         background-color: white;
         border: 2px solid;
         border-color: var(--blue-color-1);
-        > svg {
+
+        >svg {
             fill: var(--blue-color-1);
         }
     }
 }
-#banner-avanti{
+
+#banner-avanti {
     background-image: url('https://images.adsttc.com/media/images/5f34/87b2/b357/655d/e000/0109/slideshow/feature.jpg?1597278117');
     background-position: center;
     background-size: cover;
     height: 500px;
 }
-#form-cadastro{
-    input{
+
+#form-cadastro {
+    input {
         outline: none;
         border: none;
         padding: 10px;
@@ -126,165 +148,237 @@ header{
 }
 
 /* Responsividades */
-@media screen and (min-width: 1023px) and (max-width: 1445px){
-    #carouselExample, #carouselExample2{
+@media screen and (min-width: 1023px) and (max-width: 1445px) {
+
+    #carouselExample,
+    #carouselExample2 {
         .carousel-inner {
-            .carousel-item{
+            .carousel-item {
                 div:nth-last-child(1) {
                     justify-content: space-evenly !important;
                     display: none;
                 }
+
                 div {
-                   div {
-                    span {
-                        width: 200px;
-                        height: 200px;
+                    div {
+                        span {
+                            width: 200px;
+                            height: 200px;
+                        }
                     }
-                   }
                 }
             }
         }
+    }
+
+    .geo-figure {
+        display: none !important;
+    }
+
+    footer {
+        height: 500px !important;
+    }
 }
-.geo-figure{
-    display: none !important;
-}
-footer{
-    height: 500px !important;
-}
-}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    html{
+    html {
         font-size: 12px;
     }
-    header{
-    .user-info{
+
+    header {
+        .user-info {
             p {
                 display: none;
             }
         }
-       nav ul {
-        flex-wrap: wrap;
-       } 
-       nav > ul > li:nth-last-child(1), 
-       nav > ul > li:nth-last-child(2){
-        display: none;
-       }
-       div div .logo img {
-        width: 100px !important;
-       }
-       div div form span  button svg {
-        width: 15px; height: 15px;
-       }
+
+        nav ul {
+            flex-wrap: wrap;
+        }
+
+        nav>ul>li:nth-last-child(1),
+        nav>ul>li:nth-last-child(2) {
+            display: none;
+        }
+
+        div div .logo img {
+            width: 100px !important;
+        }
+
+        div div form span button svg {
+            width: 15px;
+            height: 15px;
+        }
     }
-    #banner{
+
+    #banner {
         height: 400px !important;
+
         img {
             width: 250px;
         }
     }
-    #carouselExample, #carouselExample2{
+
+    #carouselExample,
+    #carouselExample2 {
         .carousel-inner {
-            .carousel-item{
-                div:nth-last-child(1), 
-                div:nth-last-child(2){
+            .carousel-item {
+
+                div:nth-last-child(1),
+                div:nth-last-child(2) {
                     display: none;
                     justify-content: space-evenly !important;
                 }
+
                 div {
-                   div {
-                    span {
-                        width: 150px;
-                        height: 150px;
-                    }
-                   }
-                }
-            }
-        }
-        
-}
-    main > ul > li > div > img{
-        width: 350px;
-    }
-    .geo-figure{
-        display: none !important;
-    }
-}
-@media screen and (max-width: 768px){
-    html{
-        font-size: 10px;
-    }
-    header{
-        .user-info{
-                p {
-                    display: none;
-                }
-            }
-           nav ul {
-            flex-wrap: wrap;
-           } 
-           nav > ul > li:nth-last-child(1), 
-           nav > ul > li:nth-last-child(2),
-           nav > ul > li:nth-last-child(3),
-           nav > ul > li:nth-last-child(4){
-            display: none;
-           }
-           div div .logo img {
-            width: 100px !important;
-           }
-           div div form span  button svg {
-            width: 15px; height: 15px;
-           }
-        }
-        #carouselExample, #carouselExample2{
-            .carousel-inner {
-                .carousel-item{
-                    div:nth-last-child(1), 
-                    div:nth-last-child(2),
-                    div:nth-last-child(3){
-                        justify-content: space-evenly !important;
-                        display: none;
-                    }
                     div {
-                       div {
                         span {
                             width: 150px;
                             height: 150px;
                         }
-                       }
                     }
                 }
             }
-            button:nth-last-child(1){
-                right: -5px !important;
-            }
-            button:nth-last-child(2){
-                left: -5px !important;
-            }
+        }
+
     }
-        #banner{
-            height: 325px !important;
-            img {
-                width: 225px;
+
+    main>ul>li>div>img {
+        width: 350px;
+    }
+
+    .geo-figure {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        .user-info {
+            p {
+                display: none;
             }
         }
-        main > ul > li > div > img{
-            width: 250px;
+
+        nav ul {
+            flex-wrap: wrap;
         }
-        .geo-figure{
+
+        nav span div ul:nth-last-child(1),
+        nav span div ul:nth-last-child(2) {
             display: none !important;
         }
-        footer div aside img {
-            width: 100px;
+
+
+        nav>ul>li:nth-last-child(1),
+        nav>ul>li:nth-last-child(2),
+        nav>ul>li:nth-last-child(3),
+        nav>ul>li:nth-last-child(4) {
+            display: none;
         }
-        footer div aside {
-            align-items: center;
+
+        div div .logo img {
+            width: 100px !important;
         }
-        #form-cadastro{
-            form {
-                flex-direction: column;
-                input{
-                    width: auto;
+
+        div div form span button svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    #toast-categories {
+        aside ul {
+            height: 200px;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .image-coffee-toast {
+        height: 200px;
+        width: 150px;
+
+        button {
+            width: 75px;
+        }
+    }
+
+    #carouselExample,
+    #carouselExample2 {
+        .carousel-inner {
+            .carousel-item {
+
+                div:nth-last-child(1),
+                div:nth-last-child(2),
+                div:nth-last-child(3) {
+                    justify-content: space-evenly !important;
+                    display: none;
+                }
+
+                div {
+                    div {
+                        span {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
                 }
             }
         }
+
+        button:nth-last-child(1) {
+            right: -5px !important;
+        }
+
+        button:nth-last-child(2) {
+            left: -5px !important;
+        }
+    }
+
+    #banner {
+        height: 325px !important;
+
+        img {
+            width: 225px;
+        }
+    }
+
+    main ul li div aside {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    main>ul>li>div>img {
+        width: 250px;
+    }
+
+    .geo-figure {
+        display: none !important;
+    }
+
+    footer {
+        height: 500px !important;
+    }
+
+    footer div aside img {
+        width: 100px;
+    }
+
+    footer div aside {
+        align-items: center;
+    }
+
+    #form-cadastro {
+        form {
+            flex-direction: column;
+
+            input {
+                width: auto;
+            }
+        }
+    }
 }
