@@ -9,7 +9,7 @@ Este é um site simples desenvolvido com **HTML**, **Bootstrap** e **JavaScript 
 
 ## 🎨 Estilo com Bootstrap
 
-Todo o estilo visual do site foi feito utilizando apenas o **Bootstrap 5**, por meio de CDN. Não há arquivos CSS personalizados.
+Todo o estilo visual do site foi feito utilizando **Bootstrap 5**, por meio de CDN.
 
 ## ▶️ Como Rodar o Projeto
 
