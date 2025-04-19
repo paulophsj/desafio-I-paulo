@@ -11,6 +11,7 @@
     --purple-color-1: #6220c1
 }
 header{
+    z-index: 999;
     .header-message{
         background-color: var(--blue-color-1);
         color: white;
@@ -60,4 +61,66 @@ header{
     width: 200px;
     height: 350px;
     text-wrap: wrap;
+}
+#carouselExample, #carouselExample2{
+    .carousel-inner {
+        .carousel-item{
+            div{
+                div {
+                    border: 1px solid lightgray;
+                    width: min-content;
+                    display: flex;
+                    flex-direction: column;
+                    /* Div dos valores */
+                    div{
+                        border: none;
+                        u {
+                            background-color: rgb(39, 164, 168);
+                        }
+                    }
+                    span {
+                        background-image: url(https://png.pngtree.com/png-clipart/20240225/original/pngtree-a-young-man-standing-and-smiling-wearing-white-polo-shirt-shorts-png-image_14409151.png);
+                        width: 225px;
+                        height: 225px;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    button {
+                        background-color: var(--blue-color-1);
+                        color: white;
+                        border: none;
+                    }
+                    small:last-child{
+                        background-color: darkblue;
+                        width: fit-content;
+                    }
+        
+                }
+
+            }
+        }
+    }
+    button{
+        opacity: 1;
+        background-color: white;
+        border: 2px solid;
+        border-color: var(--blue-color-1);
+        > svg {
+            fill: var(--blue-color-1);
+        }
+    }
+}
+#banner-avanti{
+    background-image: url('https://images.adsttc.com/media/images/5f34/87b2/b357/655d/e000/0109/slideshow/feature.jpg?1597278117');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+#form-cadastro{
+    input{
+        outline: none;
+        border: none;
+        padding: 10px;
+        width: 20%;
+    }
 }
