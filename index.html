@@ -15,7 +15,7 @@
 
 <body>
   <header class="d-flex flex-column align-items-center border-bottom bg-white" style="position: sticky; top: 0">
-    <div class="header-message w-100 d-flex align-items-center justify-content-center p-1">
+    <div class="header-message text-center w-100 p-1">
       <small class="h6 m-0">
         Ganhe <span class="rounded-1">R$ 10,00</span> de desconto no seu
         primeiro pedido. Utilize o cupom <i>DESCONTO10</i>
@@ -28,8 +28,13 @@
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScf7cpOpm_yuoasRfGI0ECIIwXOqRE9vdLXTmtzqOtlkZBu-ZHXjjTfzh3uqiu8RyfJA&usqp=CAU"
             alt="Logo do website" width="150" />
         </div>
-        <form class="input-box w-50 d-flex">
-          <input class="w-75 p-2 border border-end-0" type="text" placeholder="Digite aqui o que você procura" />
+        <form class="input-box w-50 d-flex position-relative">
+          <input class="w-75 p-2 border border-end-0" type="text" id="search-input" placeholder="Digite aqui o que você procura" />
+          <!-- Campo de pesquisa do Input -->
+           <div class="position-absolute top-100 p-2 w-100 toast fade hide d-flex" id="search-box" style="overflow:clip ;">
+            <p class="h6" style="text-wrap: nowrap;">Você buscou por: </p>
+            <p class="h6 ms-2" style="text-wrap: wrap;" id="search-items"></p>
+           </div>
           <span>
             <button type="submit"
               class="rounded-end-4 px-3 border bg-white border-start-0 d-flex align-items-center justify-content-center h-100">
@@ -71,19 +76,11 @@
             </div>
             <!-- Toast all categories-->
             <div class="position-absolute fade bg-white rounded hide p-4 d-flex justify-content-between gap-5"
-              id="toast-categories" style="left: 0">
+              id="toast-categories" style="left: 0; pointer-events: none;">
               <aside class="d-flex flex-column gap-2">
                 <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
                   <li>
                     <span class="d-flex gap-5 text-primary">
-                      <strong>
-                        <p class="m-0 h6">Departamento</p>
-                      </strong>
-                      <span> > </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="d-flex gap-5 text-secondary">
                       <strong>
                         <p class="m-0 h6">Departamento</p>
                       </strong>
@@ -250,7 +247,7 @@
             <!-- Toast departamentos-->
             <div
               class="position-absolute rounded fade bg-white hide p-4 d-flex justify-content-between align-items-center"
-              id="toast-departaments" style="left: 0">
+              id="toast-departaments" style="left: 0; pointer-events: none;">
               <span class="flex-grow-1 d-flex flex-column gap-3">
                 <h5>
                   <strong> Departamento </strong>
@@ -300,12 +297,6 @@
                 </button>
               </div>
             </div>
-          </li>
-          <li>
-            <p class="text-secondary m-0">Departamento</p>
-          </li>
-          <li>
-            <p class="text-secondary m-0">Departamento</p>
           </li>
           <li>
             <p class="text-secondary m-0">Departamento</p>
@@ -784,9 +775,9 @@
       </div>
     </section>
     <!-- Cards -->
-    <ul style="list-style: none;" class="p-0 m-0">
+    <ul style="list-style: none;" class="p-0 m-0" >
       <li>
-        <div class="container d-flex align-items-center justify-content-center gap-5 pt-5 pb-5 text-black">
+        <div class="container d-flex align-items-center justify-content-center flex-wrap gap-5 pt-5 pb-5 text-black">
           <img src="https://m.media-amazon.com/images/I/71vmBpCDVzL.jpg" width="550" alt="Imagem de xícara">
           <aside style="width: 40%;">
             <h2>
@@ -812,9 +803,9 @@
       </li>
       <li style="background-color: lightgray;">
         <div
-          class="container d-flex flex-row-reverse align-items-center justify-content-center gap-5 pt-5 pb-5 text-black">
+          class="container d-flex flex-wrap flex-row-reverse align-items-center justify-content-center gap-5 pt-5 pb-5 text-black">
           <img src="https://m.media-amazon.com/images/I/71vmBpCDVzL.jpg" width="550" alt="Imagem de xícara">
-          <aside style="width: 35%; color: rgb(100, 100, 100);" class="position-relative">
+          <aside style="width: 40%; color: rgb(100, 100, 100);" class="position-relative">
             <h2 class="mb-5">
               <strong>
                 LOREM IPSUM
@@ -822,7 +813,7 @@
             </h2>
             <span class="d-flex position-relative align-items-center">
               <span style="width: 90px; height: 90px; background-color: #005cff; border-radius: 50%; left: -100px;"
-                class="position-absolute d-flex justify-content-center align-items-center">
+                class="geo-figure position-absolute d-flex justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-geo-alt"
                   viewBox="0 0 16 16">
                   <path
@@ -839,7 +830,7 @@
             <br />
             <span class="d-flex position-relative align-items-center">
               <span style="width: 90px; height: 90px; background-color: #005cff; border-radius: 50%; left: -100px;"
-                class="position-absolute d-flex justify-content-center align-items-center">
+                class="geo-figure position-absolute d-flex justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-geo-alt"
                   viewBox="0 0 16 16">
                   <path
@@ -856,7 +847,7 @@
             <br>
             <span class="d-flex position-relative align-items-center">
               <span style="width: 90px; height: 90px; background-color: #005cff; border-radius: 50%; left: -100px;"
-                class="position-absolute d-flex justify-content-center align-items-center">
+                class="geo-figure position-absolute d-flex justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-geo-alt"
                   viewBox="0 0 16 16">
                   <path
@@ -874,7 +865,7 @@
         </div>
       </li>
       <li>
-        <div class="container d-flex align-items-center justify-content-center gap-5 pt-5 pb-5 text-black">
+        <div class="container d-flex align-items-center justify-content-center flex-wrap gap-5 pt-5 pb-5 text-black">
           <img src="https://m.media-amazon.com/images/I/71vmBpCDVzL.jpg" width="550" alt="Imagem de xícara">
           <aside style="width: 40%;">
             <h2>
@@ -1381,7 +1372,7 @@
   </main>
   <!-- Footer -->
   <footer style="background-color: rgb(233, 233, 233); height: 400px;" class="mt-4 mb-4 p-5 d-flex flex-column justify-content-center gap-5">
-    <div class="container d-flex">
+    <div class="container d-flex flex-wrap justify-content-center gap-2">
       <!-- Logo e redes sociais-->
       <aside class="d-flex flex-column gap-5">
         <img
@@ -1438,7 +1429,7 @@
       </div>
     </div>
     <div class="container">
-      <ul class="m-0 p-0 d-flex justify-content-center gap-5" style="list-style: none;">
+      <ul class="m-0 p-0 d-flex justify-content-center gap-5 flex-wrap pb-5" style="list-style: none;">
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
           <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"/>
@@ -1570,5 +1561,24 @@
     hidePropCategories();
   });
 </script>
+<!--Script for search items-->
+<script>
+  const input = document.querySelector("#search-input")
+  const searchBox = document.querySelector("#search-box")
+  const searchItems = document.querySelector('#search-items')
+  let value = ''
 
+  input.addEventListener('keyup', function (e){
+    value = e.target.value
+    if(value != ''){
+      searchBox.classList.remove('hide')
+      searchBox.classList.add('show')
+      searchItems.innerHTML = value
+    }
+    else{
+      searchBox.classList.remove('show')
+      searchBox.classList.add('hide')
+    }
+  })
+</script>
 </html>
