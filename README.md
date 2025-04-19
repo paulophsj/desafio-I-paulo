@@ -1,6 +1,6 @@
 # 🌐 Projeto Web com HTML, Bootstrap e JavaScript
 
-Este é um site simples desenvolvido com **HTML**, **Bootstrap** e **JavaScript Vanilla**. É ideal para estudos e pequenos projetos front-end utilizando apenas tecnologias básicas da web, sem frameworks avançados.
+Este é um site simples desenvolvido com **HTML**, **Bootstrap** e **JavaScript Vanilla**.
 
 ## 📁 Estrutura do Projeto
 
@@ -9,7 +9,7 @@ Este é um site simples desenvolvido com **HTML**, **Bootstrap** e **JavaScript 
 
 ## 🎨 Estilo com Bootstrap
 
-Todo o estilo visual do site foi feito utilizando **Bootstrap 5**, por meio de CDN.
+O estilo visual do site foi feito utilizando **Bootstrap 5**, por meio de CDN.
 
 ## ▶️ Como Rodar o Projeto
 
