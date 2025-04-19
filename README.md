@@ -5,7 +5,7 @@ Este é um site simples desenvolvido com **HTML**, **Bootstrap** e **JavaScript 
 ## 📁 Estrutura do Projeto
 
 - `index.html` — Estrutura da página com links para o CDN do Bootstrap
-- `script.js` — Código JavaScript para interações básicas
+- `style.css` — Código CSS para interações estilização e responsividade
 
 ## 🎨 Estilo com Bootstrap
 
