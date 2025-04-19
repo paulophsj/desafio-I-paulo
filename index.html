@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="theme-color" content="#005cff" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desafio I - Pense Avanti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -64,7 +65,7 @@
       </div>
       <nav class="d-flex gap-2 py-3">
         <!-- Departamentos -->
-        <ul class="p-0 d-flex w-100 m-0 justify-content-between">
+        <ul class="p-0 d-flex w-100 m-0 justify-content-between align-items-center">
           <li id="button-categories">
             <div class="d-flex align-items-center gap-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
@@ -75,7 +76,7 @@
               <p class="m-0 text-nowrap">Todas as Categorias</p>
             </div>
             <!-- Toast all categories-->
-            <div class="position-absolute fade bg-white rounded hide p-4 d-flex justify-content-between gap-5"
+            <div class="position-absolute border-bottom fade bg-white rounded hide p-4 d-flex justify-content-between gap-5"
               id="toast-categories" style="left: 0; pointer-events: none;">
               <aside class="d-flex flex-column gap-2">
                 <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
@@ -246,7 +247,7 @@
             </p>
             <!-- Toast departamentos-->
             <div
-              class="position-absolute rounded fade bg-white hide p-4 d-flex justify-content-between align-items-center"
+              class="position-absolute border-bottom rounded fade bg-white hide p-4 d-flex justify-content-between align-items-center"
               id="toast-departaments" style="left: 0; pointer-events: none;">
               <span class="flex-grow-1 d-flex flex-column gap-3">
                 <h5>
